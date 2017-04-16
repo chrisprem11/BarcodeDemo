@@ -1,3 +1,4 @@
 com\urs\configuration\WebInitializer.class
 com\urs\configuration\AppConfig.class
+com\urs\configuration\CORSFilter.class
 com\urs\controller\HomeController.class
