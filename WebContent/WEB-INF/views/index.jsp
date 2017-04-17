@@ -20,9 +20,8 @@
 			<br />
 			<div class="col-md-4" id="easyPaginate">
 				<c:forEach var="item" items="${imageSource}">
-					<p><c:out value="${item.key}"></c:out>Key- ${item.key} </p>
 					<img alt="barcode" src="<c:out value='${item.value}'></c:out>"
-						class="img img-responsive img-thumbnail">
+						class="img img-responsive img-thumbnail"/>
 					<br />
 				</c:forEach>
 			</div>
@@ -37,9 +36,8 @@
 					<c:forEach var="item" items="${imageSource}">
 
 						<img alt="barcode" src="<c:out value='${item.value}'></c:out>"
-						class="img img-responsive img-thumbnail">
-						<p><c:out value="${item.key}"></c:out> </p>
-						<br />
+						class="img img-responsive img-thumbnail" />
+					<br />
 					</c:forEach>
 				</div>
 				<br />
@@ -51,7 +49,7 @@
 	<script src="static/js/bootstrap.js" type="text/javascript"></script>
 	<script src="static/js/jquery.easyPaginate.js" type="text/javascript"></script>
 	<script type="text/javascript">
-		var number = ${barcodePerPage};
+		 var number = ${barcodePerPage}; 
 		$('#easyPaginate').easyPaginate({
 			paginateElement : 'img',
 			elementsPerPage : number,

@@ -20,14 +20,14 @@
 			<br />
 			<div class="col-md-4" id="easyPaginate">
 				<c:forEach var="item" items="${imageSource}">
-					<p><c:out value="${item.key}"></c:out>Key- ${item.key} </p>
 					<img alt="barcode" src="<c:out value='${item.value}'></c:out>"
 						class="img img-responsive img-thumbnail">
-					<br />
+<%-- 						<p><c:out value="${item.key}"></c:out> </p>
+ --%>					<br />
 				</c:forEach>
 			</div>
 			<br />
-		</div>
+		</div> ${barcodePerPage}
 		<c:if test="${isImageMirrored =='yes' }">
 		<hr />
 			<div class="row text-center">
@@ -38,8 +38,8 @@
 
 						<img alt="barcode" src="<c:out value='${item.value}'></c:out>"
 						class="img img-responsive img-thumbnail">
-						<p><c:out value="${item.key}"></c:out> </p>
-						<br />
+<%-- 						<p><c:out value="${item.key}"></c:out> </p>
+ --%>						<br />
 					</c:forEach>
 				</div>
 				<br />

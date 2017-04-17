@@ -66,6 +66,7 @@ public class HomeController {
 		String mirrorBarcode = environment.getProperty(REPEAT);
 		String barcodePerPage = environment.getProperty(BARCODE_PER_PAGE);
 		Map<String, String> barcodeImageSource = new HashMap<String, String>();
+	
 		String imageFilePath = "";
 
 		for (String barcode : allBarcodes) {
@@ -85,6 +86,7 @@ public class HomeController {
 			imageFilePath = directory + barcodeName + randomDigit + ".jpg";
 			barcodeImageSource.put(barcode, imageFilePath);
 
+			
 		}
 		System.out.println(barcodeImageSource);
 		model.addAttribute("imageSource", barcodeImageSource);
